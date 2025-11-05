@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Պարաբոլային անտենաներ — Ինտերակտիվ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">π</div>
+  <div>
+    <h1>Պարաբոլային Անտենաներ</h1>
+    <p class="subtitle">Կրթական/Ինտերակտիվ էջ՝ պարաբոլայի և անտենաների վերաբերյալ</p>
+  </div>
+</header>
+
+<main class="container">
+
+<section class="card">
+  <h2>Պարաբոլային անտենաներ</h2>
+  <p>Պարաբոլային անտենան (կամ արբանյակային ափսե) ունի պարաբոլային հայելի, որը կենտրոնացնում է ալիքները մեկ կետում՝ ֆոկուսում։</p>
+  <h3>Դերը</h3>
+  <ul>
+    <li>Փոխադրում և ընդունում ազդանշաններ հեռահար տարածությունների համար</li>
+    <li>Բարձր ուղղորդվածություն և ուժեղացում</li>
+    <li>Օգտագործվում է ռադարների, արբանյակային կապի, աստղագիտության մեջ</li>
+  </ul>
+  <h3>Նշանակությունը</h3>
+  <ul>
+    <li>Ամենաարդյունավետ անտենաների տեսակներից մեկը՝ բարձր ուղղորդվածությամբ և զգայունությամբ</li>
+    <li>Թույլ է տալիս կապ հաստատել նույնիսկ հեռավոր վայրերում</li>
+    <li>Օգնում է ապահովել բարձրորակ հաղորդակցություն</li>
+  </ul>
+  <h3>Պարաբոլի հետ առնչություն</h3>
+  <p>Պարաբոլը մաթեմատիկական հասկացություն է։ Անտենաներում օգտագործվում է նրա <strong>անդարձնող հատկությունը</strong>, որը ապահովում է, որ առանցքին զուգահեռ եկող ալիքները կենտրոնանան ֆոկուսում:</p>
+  <button id="readMore" class="btn">Read More (Wikipedia)</button>
+  <button id="toggleRays" class="btn outline">Toggle Rays</button>
+</section>
+
+<section class="card">
+  <h2>Ինտերակտիվ պատկերը (Canvas)</h2>
+  <p class="small">Տես ֆոկուսը (դեղին) և ալիքների անդրադարձը՝ օգտվելով «Toggle Rays» կոճակից:</p>
+  <div class="canvas-wrap">
+    <canvas id="parabolaCanvas" width="720" height="360"></canvas>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Փոքր Թեստ</h2>
+  <p>Որտեղ է տեղադրվում ընդունիչը անտենայի դեպքում:</p>
+  <button id="ansCorrect" class="btn">Ֆոկուսում</button>
+  <button id="ansWrong" class="btn outline">Ուղղիչ գծի վրա</button>
+  <p id="quizResult" class="small"></p>
+</section>
+
+<section class="card">
+  <h2>Ուղարկիր կարծիքը (Feedback)</h2>
+  <form id="feedbackForm">
+    <input type="text" id="fbName" placeholder="Անուն (ընտրյալ)">
+    <textarea id="fbMessage" placeholder="Գրիր կարծիքը..." required></textarea>
+    <button type="submit" class="btn">Ուղարկել</button>
+    <button type="button" id="clearForm" class="btn outline">Մաքրել</button>
+  </form>
+  <p id="fbStatus" class="small"></p>
+</section>
+
+</main>
+
+<footer>© 2025 Կրթական նախագիծ — Պարաբոլային Անտենաներ</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
